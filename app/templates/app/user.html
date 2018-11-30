@@ -1,0 +1,12 @@
+<!-- 유저명 -->
+<h1>{{ user.user_name }}</h1>
+
+<!-- 앨범 정보 -->
+<ul>
+    {% for album in user.album_set.all %}
+    <li>
+        {{ album.name }} /
+        {{ album.description }}
+    </li>
+    {% endfor %}
+</ul>

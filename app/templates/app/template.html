@@ -1,0 +1,24 @@
+{% if age > 20 %}
+    <h1>20살 초과</h1>
+{% else %}
+    <h1>20살 이하</h1>
+{% endif %}
+
+{% for d in dic %}
+    <li>{{ d }}</li>
+{% endfor %}
+
+
+<!--<h1>words</h1>-->
+<!--{{ words }}<br>-->
+<!--{{ words.2 }}-->
+
+<h2>dic</h2>
+{{ dic }}<br>
+{{ dic.b }}<br>
+{{ dic.c.2 }}
+
+<br>
+{{ name }}
+<br>
+{{ age }}

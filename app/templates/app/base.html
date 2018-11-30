@@ -1,0 +1,24 @@
+<meta charset="utf8">
+{% load static %}
+<!--<link rel="stylesheet" href="/static/style.css">-->
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<style>
+    div {
+        border:1px solid yellow;
+        width:100px; height:50px;
+    }
+</style>
+<div>
+    <a href="{% url 'a_url' %}">A 메뉴</a><br>
+    <a href="{% url 'b_url' %}">B 메뉴</a>
+</div>
+{% block content %}
+{% endblock %}
+
+
+
+
+
+
+
+
